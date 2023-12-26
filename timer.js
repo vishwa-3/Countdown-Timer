@@ -94,8 +94,7 @@ function secDe() {
 }
 function startTimer(){
     if(ss.textContent == 0 && mm.textContent == 0 && hh.textContent == 0){
-        timeRunning = false;
-        clearInterval(x);
+        stopTimer();
         return;
     }
     ss.textContent--;

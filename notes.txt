@@ -1,0 +1,30 @@
+HTML :
+    1. Main-Container -> container1 and container2
+    2. container1 -> hour-block, colon, min-block, colon, sec-block
+    3. hour-block -> up-arrow, hour, down-arrow [similar to min and sec block]
+    4. container2 -> buttons [start,stop,reset]
+
+JS :
+    1. Use querySelector() to select classes and IDs.
+    2. Set click events for up/down arrows, start, stop, and reset buttons.
+    3. Up arrow for increment and down arrow for decrement (when the timer is not running).
+    4. Create a doubleDigit(digit) function to ensure single-digit values are prefixed with '0'.
+    5. start button triggers startTimer() if the timer is not running. Use setInterval to decrement time by one second and set timeRunning to true.
+    6. startTimer() 
+        if sec min and hour is 0 then
+            stop the time
+            return
+        else:
+            decrement sec by 1
+            if sec is less than 0 then
+                if min is greater than 0 then
+                    decrement min by 1
+                    set sec to 59
+                else:
+                    if hour is greater than 0:
+                        decrement hour by 1
+                        set min and sec to 59
+        doubleDigit the sec min and hour
+        
+    7. stop -> set timeRunning to false and clearInterval
+    8. reset -> set sec, min, hour to 0
