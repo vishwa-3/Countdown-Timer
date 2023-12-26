@@ -1,0 +1,129 @@
+html{
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Allerta Stencil';
+    user-select: none;
+}
+
+
+
+.main{
+    height: 600px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.colon{
+    font-size: 80px;
+    text-shadow: 0 0 10px white,0 0 20px blueviolet;
+}
+
+
+
+.container{
+    height: 380px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:35px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white,
+    0 0 30px blueviolet, 
+    inset 0 0 10px white, 
+    inset 0 0 30px blueviolet;
+    border-radius: 20px 0 0 20px;
+    
+}
+
+
+
+.hour-block,.min-block,.sec-block{
+    height: 280px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+}
+
+.hh,.mm,.ss{
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px white,
+    0 0 30px blueviolet;
+    color: blueviolet;
+    font-size: 80px;
+    text-shadow: 0 0 5px blueviolet;
+}
+
+
+
+.up,.down{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up img,.down img{
+    filter: invert(100%) drop-shadow(0 0 5px white) drop-shadow(0 0 10px blueviolet);
+}
+
+.up:hover,.down:hover{
+    transform: scale(.9);
+}
+
+
+
+#btns{
+    height: 380px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white,
+    0 0 30px blueviolet;
+    border-radius: 0px 20px 20px 0px;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+button img{
+    filter: drop-shadow(0 0 2px blueviolet);
+}
+
+button img:hover{
+    transform: scale(.9);
+    transition: all .3s;
+    opacity: .85;
+}
+
+
+
