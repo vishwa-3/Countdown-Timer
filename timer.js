@@ -124,3 +124,4 @@ function resetTimer(){
     mm.textContent='0'+0;
     hh.textContent='0'+0;
 }
+//the end
