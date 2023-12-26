@@ -125,3 +125,12 @@ function resetTimer(){
     mm.textContent='0'+0;
     hh.textContent='0'+0;
 }
+
+const buttons = document.querySelectorAll('button','up','down');
+
+// Prevent default drag behavior for each button
+buttons.forEach(button => {
+    button.addEventListener('dragstart', (e) => {
+        e.preventDefault();
+    });
+});
